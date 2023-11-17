@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <title>Random Gadget</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+        }
+
+        .container {
+            max-width: 1140px;
+        }
+
+        .big-text {
+            font-size: 96px;
+            font-weight: 700;
+        }
+
+        .big-text span {
+            font-weight: 300;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .card {
+            background: #EDEDED;
+        }
+
+        .tab-content .card {
+            background: #F6F6F6;
+            border: none;
+        }
+
+        .apple {
+            font-size: 29px;
+            font-weight: 600;
+        }
+
+        .apple span {
+            font-weight: 400;
+        }
+
+        .nav-link {
+            border: none !important;
+            padding: 0px 10px;
+            color: #171495;
+            font-weight: 600;
+        }
+
+        .nav-link.active {
+            border-bottom: 2px solid #000 !important;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        @media(max-width:767px) {
+            .big-text {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header style="background: #1A187A;">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#">
+                    <img width="45" src="images/logo-2.png" alt="">
+                </a>
+
+                <button class="navbar-toggler  bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse align-items-center" id="navbarTogglerDemo03">
+                    <form class="py-2 py-lg-0 mx-auto" role="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                                aria-describedby="basic-addon2">
+                            <button type="submit" class="input-group-text" id="basic-addon2">
+                                <img width="20" src="images/search-svgrepo-com.svg" alt="s">
+                            </button>
+                        </div>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0 ">
+                        <li class="nav-item ms-lg-2">
+                            <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item ms-lg-2">
+                            <a class="nav-link text-light" href="#">About</a>
+                        </li>
+                        <li class="nav-item ms-lg-2">
+                            <a class="nav-link text-light" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item ms-lg-2">
+                            <a class="nav-link" href="#">
+                                <img width="30" src="images/cart-shopping-svgrepo-com.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item ms-lg-2">
+                            <a class="nav-link" href="#">
+                                <img width="30" src="images/user-alt-1-svgrepo-com.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- banner carousel -->
+    <section class="carousa pt-5" style="background: url(/images/v904-nunny-0121.png) no-repeat center center/cover;">
+        <div class="py-3 py-xxl-5"></div>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="container">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row gy-3 align-items-center">
+                            <div class="col-md-8">
+                                <h4>Welcome to "Random Gadget"</h4>
+                                <br>
+                                <p class="fs-5">Exclusive</p>
+                                <h1 class="big-text"><span>iPhone</span> 14 Pro</h1>
+                                <p>We are selling the best phones with your ability</p>
+                                <br>
+                                <button class="btn text-white py-3 px-4" style="background: #171495;">Shop Now</button>
+                            </div>
+                            <div class="col-md-4 text-center px-5 px-md-2">
+                                <img src="images/Iphonei.png" class="d-lg-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row gy-3 align-items-center">
+                            <div class="col-md-8">
+                                <h4>Welcome to "Random Gadget"</h4>
+                                <br>
+                                <p class="fs-5">Pro.Cheap</p>
+                                <h1 class="big-text"><span>Moto</span> Edge 40</h1>
+                                <p>Get Your Budget Phone from Us</p>
+                                <br>
+                                <button class="btn text-white py-3 px-4" style="background: #171495;">Shop Now</button>
+                            </div>
+                            <div class="col-md-4 text-center px-5 px-md-2">
+                                <img src="images/moto.png" class="d-lg-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <img width="40" src="images/next-svgrepo-coms.svg" alt="" style="transform: rotate(180deg);">
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <img width="40" src="images/next-svgrepo-coms.svg" alt="">
+            </button>
+        </div>
+    </section>
+
+    <!-- category banner 2 -->
+    <section class="products">
+        <div class="container p-0" style="max-width: 1460px;">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <div class="row align-items-center">
+                        <div class="col-6">
+                            <img class="img-fluid w-100" src="images/ipad.png" alt="">
+                        </div>
+                        <div class="col-6 pe-3">
+                            <h3 style="font-size: 45px;font-weight: 600;">iPad 9</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                        </div>
+                    </div>
+
+                    <div style="background: #ADC2D7;">
+                        <div class="py-2" style="background: url(/images/111.png) no-repeat left center;">
+                            <div class="row align-items-center justify-content-end">
+                                <div class="col-6 col-md-4 pe-3">
+                                    <h3 class="apple">
+                                        <span>Apple <br>
+                                            AirPods
+                                        </span><br>
+                                        Max
+                                    </h3>
+                                    <p class="text-white">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div style="background: #EDEDED; padding: 57px 0;">
+                        <div class="row g-3 align-items-center">
+                            <div class="col-md-7 ps-5">
+                                <h3>Macbook Air</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut
+                                    labore et dolore magna aliqua. Ut enim ad
+                                </p>
+                                <button class="btn text-white py-3 px-4" style="background: #171495;">Shop Now</button>
+
+                            </div>
+                            <div class="col-md-5">
+                                <img src="images/Group6copy.png" alt="" class="img-fluid d-lg-block d-none">
+                                <img src="images/Group6.png" alt="" class="img-fluid d-lg-none">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- category -->
+    <section class="category py-5">
+        <div class="container">
+            <h4 class="pb-3">Browse By Category</h4>
+            <div class="row g-3">
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <a href="#">
+                        <div class="card rounded-4 border-0 p-3 align-items-center">
+                            <img width="40" src="images/mobile-2-svgrepo-com.svg" alt="">
+                            <p class="pt-3">Phones</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <a href="#">
+                        <div class="card rounded-4 border-0 p-3 align-items-center">
+                            <img width="40" src="images/watch-alt-svgrepo-com.svg" alt="">
+                            <p class="pt-3">Smart Watches</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <a href="#">
+                        <div class="card rounded-4 border-0 p-3 align-items-center">
+                            <img width="40" src="images/camera-svgrepo-com.svg" alt="">
+                            <p class="pt-3">Cameras</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <a href="#">
+                        <div class="card rounded-4 border-0 p-3 align-items-center">
+                            <img width="40" src="images/headphone-svgrepo-com.svg" alt="">
+                            <p class="pt-3">Headphones</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <a href="#">
+                        <div class="card rounded-4 border-0 p-3 align-items-center">
+                            <img width="40" src="images/computer-svgrepo-com.svg" alt="">
+                            <p class="pt-3">Computers</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                    <a href="#">
+                        <div class="card rounded-4 border-0 p-3 align-items-center">
+                            <img width="40" src="images/gaming-pad-02-svgrepo-com.svg" alt="">
+                            <p class="pt-3">Gaming</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- new arrival -->
+    <section class="new-arrival py-5">
+        <div class="container">
+            <ul class="nav nav-tabs mb-3 border-0" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="new-arrival-tab" data-bs-toggle="tab"
+                        data-bs-target="#new-arrival-tab-pane" type="button" role="tab"
+                        aria-controls="new-arrival-tab-pane" aria-selected="true">New-arrival</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="best-seller-tab" data-bs-toggle="tab"
+                        data-bs-target="#best-seller-tab-pane" type="button" role="tab"
+                        aria-controls="best-seller-tab-pane" aria-selected="false">Best-seller</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="featured-products-tab" data-bs-toggle="tab"
+                        data-bs-target="#featured-products-tab-pane" type="button" role="tab"
+                        aria-controls="featured-products-tab-pane" aria-selected="false">Featured-products</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="new-arrival-tab-pane" role="tabpanel"
+                    aria-labelledby="new-arrival-tab" tabindex="0">
+                    <div class="row g-3">
+                        <div class="col-6 col-lg-3">
+                            <div class="card h-100 p-2 p-md-3">
+                                <div class="text-end pb-2">
+                                    <img width="30" src="images/heart-svgrepo-com.svg" alt="">
+                                </div>
+                                <img src="images/Iphone11.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">iPhone</h5>
+                                    <p class="card-text">
+                                        Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)
+                                    </p>
+                                    <h4>1036$</h4>
+                                    <a href="#" class="btn bg-dark text-light">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-lg-3">
+                            <div class="card h-100 p-2 p-md-3">
+                                <div class="text-end pb-2">
+                                    <img width="30" src="images/heart-svgrepo-com_RED.svg" alt="">
+                                </div>
+                                <img src="images/Iphone12.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Canon Camera</h5>
+                                    <p class="card-text">
+                                        Blackmagic Pocket Cinema Camera 6k
+                                    </p>
+                                    <h4>2336$</h4>
+                                    <a href="#" class="btn bg-dark text-light">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-lg-3">
+                            <div class="card h-100 p-2 p-md-3">
+                                <div class="text-end pb-2">
+                                    <img width="30" src="images/heart-svgrepo-com.svg" alt="">
+                                </div>
+                                <img src="images/Iphonep`.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Smart Watch</h5>
+                                    <p class="card-text">
+                                        Apple Watch Series 9 GPS 41mm Starlight Aluminium Case
+                                    </p>
+                                    <h4>399$</h4>
+                                    <a href="#" class="btn bg-dark text-light">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-lg-3">
+                            <div class="card h-100 p-2 p-md-3">
+                                <div class="text-end pb-2">
+                                    <img width="30" src="images/heart-svgrepo-com.svg" alt="">
+                                </div>
+                                <img src="images/hero__gnfk5g59t0qe_xlarge_2x 1.png" class="card-img-top px-xl-3"
+                                    alt="">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Headphone</h5>
+                                    <p class="card-text">
+                                        AirPods
+                                        Max
+                                        Silver
+                                    </p>
+                                    <h4>900$</h4>
+                                    <a href="#" class="btn bg-dark text-light">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="best-seller-tab-pane" role="tabpanel" aria-labelledby="best-seller-tab"
+                    tabindex="0">
+                    <div class="row">
+                        <div class="col-6 col-lg-3">
+                            <div class="card h-100 p-2 p-md-3">
+                                <div class="text-end pb-2">
+                                    <img width="30" src="images/heart-svgrepo-com.svg" alt="">
+                                </div>
+                                <img src="images/Iphonep`.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Smart Watch</h5>
+                                    <p class="card-text">
+                                        Apple Watch Series 9 GPS 41mm Starlight Aluminium Case
+                                    </p>
+                                    <h4>399$</h4>
+                                    <a href="#" class="btn bg-dark text-light">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-lg-3">
+                            <div class="card h-100 p-2 p-md-3">
+                                <div class="text-end pb-2">
+                                    <img width="30" src="images/heart-svgrepo-com.svg" alt="">
+                                </div>
+                                <img src="images/hero__gnfk5g59t0qe_xlarge_2x 1.png" class="card-img-top px-xl-3"
+                                    alt="">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Headphone</h5>
+                                    <p class="card-text">
+                                        AirPods
+                                        Max
+                                        Silver
+                                    </p>
+                                    <h4>900$</h4>
+                                    <a href="#" class="btn bg-dark text-light">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-lg-3">
+                            <div class="card h-100 p-2 p-md-3">
+                                <div class="text-end pb-2">
+                                    <img width="30" src="images/heart-svgrepo-com.svg" alt="">
+                                </div>
+                                <img src="images/Iphonep`.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Smart Watch</h5>
+                                    <p class="card-text">
+                                        Apple Watch Series 9 GPS 41mm Starlight Aluminium Case
+                                    </p>
+                                    <h4>399$</h4>
+                                    <a href="#" class="btn bg-dark text-light">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-lg-3">
+                            <div class="card h-100 p-2 p-md-3">
+                                <div class="text-end pb-2">
+                                    <img width="30" src="images/heart-svgrepo-com.svg" alt="">
+                                </div>
+                                <img src="images/hero__gnfk5g59t0qe_xlarge_2x 1.png" class="card-img-top px-xl-3"
+                                    alt="">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Headphone</h5>
+                                    <p class="card-text">
+                                        AirPods
+                                        Max
+                                        Silver
+                                    </p>
+                                    <h4>900$</h4>
+                                    <a href="#" class="btn bg-dark text-light">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="featured-products-tab-pane" role="tabpanel"
+                    aria-labelledby="featured-products-tab" tabindex="0">
+                    <div class="row">
+                        <div class="col-6 col-lg-3">
+                            <div class="card h-100 p-2 p-md-3">
+                                <div class="text-end pb-2">
+                                    <img width="30" src="images/heart-svgrepo-com.svg" alt="">
+                                </div>
+                                <img src="images/Iphone11.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">iPhone</h5>
+                                    <p class="card-text">
+                                        Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)
+                                    </p>
+                                    <h4>1036$</h4>
+                                    <a href="#" class="btn bg-dark text-light">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-lg-3">
+                            <div class="card h-100 p-2 p-md-3">
+                                <div class="text-end pb-2">
+                                    <img width="30" src="images/heart-svgrepo-com_RED.svg" alt="">
+                                </div>
+                                <img src="images/Iphone12.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Canon Camera</h5>
+                                    <p class="card-text">
+                                        Blackmagic Pocket Cinema Camera 6k
+                                    </p>
+                                    <h4>2336$</h4>
+                                    <a href="#" class="btn bg-dark text-light">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-lg-3">
+                            <div class="card h-100 p-2 p-md-3">
+                                <div class="text-end pb-2">
+                                    <img width="30" src="images/heart-svgrepo-com.svg" alt="">
+                                </div>
+                                <img src="images/Iphone11.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">iPhone</h5>
+                                    <p class="card-text">
+                                        Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)
+                                    </p>
+                                    <h4>1036$</h4>
+                                    <a href="#" class="btn bg-dark text-light">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-lg-3">
+                            <div class="card h-100 p-2 p-md-3">
+                                <div class="text-end pb-2">
+                                    <img width="30" src="images/heart-svgrepo-com_RED.svg" alt="">
+                                </div>
+                                <img src="images/Iphone12.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Canon Camera</h5>
+                                    <p class="card-text">
+                                        Blackmagic Pocket Cinema Camera 6k
+                                    </p>
+                                    <h4>2336$</h4>
+                                    <a href="#" class="btn bg-dark text-light">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- offer -->
+    <section class="offer py-5 overflow-hidden" style="background: #958AD4;">
+        <div class="container-fluid p-0">
+            <div class="row g-3 align-items-center">
+                <div class="col-md-4">
+                    <img src="images/image19.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-4 text-center">
+                    <h2>11.11 Sale</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et</p>
+                </div>
+                <div class="col-md-4 text-end">
+                    <img src="images/im20.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-dark py-5" style="color: #fff;">
+        <div class="container pt-5">
+            <div class="row gy-3">
+                <div class="col-md-6 col-xl-3">
+                    <img width="80" src="images/logo-2.png" alt="">
+                    <h3>Random Gadgets</h3>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <h5 class="pb-2">Social Links</h5>
+                    <ul class="p-0 d-flex align-items-center justify-content-around">
+                        <li><a href="#"><img width="40" src="images/twitter.svg" alt=""></a></li>
+                        <li><a href="#"><img width="40" src="images/linkedin-161-svgrepo-com.svg" alt=""></a></li>
+                        <li><a href="#"><img width="40" src="images/facebook-176-svgrepo-com.svg" alt=""></a></li>
+                        <li><a href="#"><img width="40" src="images/tiktok-svgrepo-com.svg" alt=""></a></li>
+                        <li><a href="#"><img width="40" src="images/insta-svgrepo-com.svg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <h5 class="pb-2">Services</h5>
+                    <ul class="p-0">
+                        <li class="pb-2"><a href="#">Bonus program</a></li>
+                        <li class="pb-2"><a href="#">Gift cards</a></li>
+                        <li class="pb-2"><a href="#">Credit and payment</a></li>
+                        <li class="pb-2"><a href="#">Service contracts</a></li>
+                        <li class="pb-2"><a href="#">Non-cash account</a></li>
+                        <li><a href="#">Payment</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <h5 class="pb-2">Services</h5>
+                    <ul class="p-0">
+                        <li class="pb-2"><a href="#">Find an order</a></li>
+                        <li class="pb-2"><a href="#">Terms of delivery</a></li>
+                        <li class="pb-2"><a href="#">Exchange and return of goods</a></li>
+                        <li class="pb-2"><a href="#">Guarantee</a></li>
+                        <li class="pb-2"><a href="#">Frequently asked questions</a></li>
+                        <li><a href="#">Terms of use of the site</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
