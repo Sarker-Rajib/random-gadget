@@ -1,0 +1,136 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1140px;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+}
+
+.welcome {
+    font-weight: 600;
+
+}
+
+.welcome span {
+    color: #a31891;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+
+.carousel-indicators .nav-t {
+    background: #17b5d1;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    border: 2px solid #ffffff;
+    outline: 2px solid #c51e1e;
+    padding: 0;
+}
+
+.macbook {
+    background: #EDEDED;
+    padding: 53px 0 54px;
+}
+
+.big-text {
+    font-size: 96px;
+    font-weight: 700;
+}
+
+.big-text span {
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card {
+    background: #EDEDED;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    background: #00416A;
+    background: linear-gradient(45deg, #E4E5E6, #00416A);
+}
+
+.tab-content .card {
+    transition: 0.2s;
+    background: #F6F6F6;
+    border: none;
+}
+
+.tab-content .card:hover {
+    background: #00416A;
+    background: linear-gradient(45deg, #E4E5E6, #00416A);
+}
+
+.apple {
+    font-size: 29px;
+    font-weight: 600;
+}
+
+.apple span {
+    font-weight: 400;
+}
+
+.nav-link {
+    border: none !important;
+    padding: 0px 10px;
+    color: #171495;
+    font-weight: 600;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid #000 !important;
+}
+
+li {
+    list-style: none;
+}
+
+.offer {
+    overflow: hidden;
+}
+
+.sale {
+    color: #171495;
+    font-weight: 800;
+    font-size: 80px;
+}
+
+.sale span {
+    color: #EDEDED;
+}
+
+footer a {
+    color: rgb(176, 188, 194);
+    transition: 0.2s;
+    display: inline-block;
+}
+
+footer a:hover {
+    transform: scale(1.02);
+    color: #a31891;
+}
+
+@media(max-width:1399px) {
+    .macbook {
+        background: #EDEDED;
+        padding: 57px 0;
+    }
+}
+
+@media(max-width:767px) {
+    .big-text {
+        font-size: 40px;
+    }
+}
